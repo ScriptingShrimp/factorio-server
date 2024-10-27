@@ -10,3 +10,6 @@ for config and save details see CLI arguments in unit file
 1. stop the running server `systemctl stop factorio.service`
 1. swapt the binaries 
 1. start the server again `systemctl start factorio.service`
+
+## more detailed HOWTO
+https://pimylifeup.com/ubuntu-factorio-server/
