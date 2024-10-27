@@ -1,0 +1,18 @@
+# /etc/systemd/system/factorio.service
+
+[Unit]
+Description=Factorio Headless Server
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+Type=simple
+User=factorio
+ExecStart=/home/factorio/factorio-server/server/bin/x64/factorio --start-server /home/factorio/factorio-server/saves/Kamo.zip --server-settings /home/factorio/factorio-server/settings/server-settings.json
+
+[Install]
+WantedBy=multi-user.target
+
