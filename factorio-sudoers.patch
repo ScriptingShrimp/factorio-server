@@ -1,0 +1,3 @@
+# factorio user specific commands to handle the factorio.service 
+factorio ALL=(ALL) NOPASSWD:/bin/systemctl start factorio.service
+factorio ALL=(ALL) NOPASSWD:/bin/systemctl stop factorio.service
